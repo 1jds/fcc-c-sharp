@@ -291,3 +291,24 @@ Console.WriteLine("Fourth: " + (++value));  // Fourth: 4
 ### Readability
 
 > Since you'll write the code once but read it many times, you should prioritize readability!
+
+### Convert Fahrenheit to Celsius
+
+My solution (with rounding):
+
+```cs
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * 5 / 9;
+Console.WriteLine("The temperature is " + Decimal.Round(celsius, 1) + " Celsius.");
+// The temperature is 34.4 Celsius.
+```
+
+Microsoft's solution:
+
+```cs
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius.");
+```
+
+## FCC Lesson 5

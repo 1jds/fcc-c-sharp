@@ -218,3 +218,76 @@ Console.WriteLine($@"C:\Output\{projectName}\Data");
 // Output will be...
 // C:\Output\First-Project\Data
 ```
+
+## FCC Lesson 4
+
+### C# can do implicit type conversion
+
+```cs
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
+```
+
+### Int truncation
+
+As with C, C# truncates int values in division where a decimal answer would be produced. So, for example:
+
+```cs
+int quotient = 5 / 2;
+Console.WriteLine(quotient);
+// 2 and not 2.5
+```
+
+We can use a type that supports decimals instead:
+
+```cs
+decimal decimalQuotient = 5.0m / 2;
+Console.WriteLine($"Decimal quotient: {decimalQuotient}");
+// Decimal quotient: 2.5
+```
+
+This also works:
+
+```cs
+decimal decimalQuotient = 7 / 5.0m;
+decimal decimalQuotient = 7.0m / 5.0m;
+```
+
+But this doesn't:
+
+```cs
+int decimalQuotient = 7 / 5.0m;
+int decimalQuotient = 7.0m / 5;
+int decimalQuotient = 7.0m / 5.0m;
+decimal decimalQuotient = 7 / 5;
+```
+
+### Type Casting
+
+You can also temporarily type cast one or both of the ints to a decimal capable type. For example:
+
+```cs
+int first = 5;
+int second = 2;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+```
+
+> Operators like +=, -=, \*=, ++, and -- are known as compound assignment operators because they compound some operation in addition to assigning the result to the variable. The += operator is specifically termed the addition assignment operator.
+
+### A note on value++ vs. ++value incrementing
+
+Both the increment and decrement operators have an interesting quality — depending on their position, they perform their operation before or after they retrieve their value. In other words, if you use the operator before the value as in ++value, then the increment will happen before the value is retrieved. Likewise, value++ will increment the value after the value has been retrieved.
+
+```cs
+int value = 2;
+Console.WriteLine("First: " + value);       // First: 2
+Console.WriteLine($"Second: {value++}");    // Second: 2
+Console.WriteLine("Third: " + value);       // Third: 3
+Console.WriteLine("Fourth: " + (++value));  // Fourth: 4
+```
+
+### Readability
+
+> Since you'll write the code once but read it many times, you should prioritize readability!

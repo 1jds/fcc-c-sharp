@@ -1,0 +1,7 @@
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\bin\Debug\FirstProject.exe.config
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\bin\Debug\FirstProject.exe
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\bin\Debug\FirstProject.pdb
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\obj\Debug\FirstProject.csproj.AssemblyReference.cache
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\obj\Debug\FirstProject.csproj.CoreCompileInputs.cache
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\obj\Debug\FirstProject.exe
+C:\Users\James\Desktop\James\Programming\CSharp\YT-Projects\FirstProject\FirstProject\obj\Debug\FirstProject.pdb
